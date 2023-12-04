@@ -1,0 +1,140 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freehand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/**/
+
+:root {
+    --bg-color: #625A67;
+    --second-bg-color: #F7EFE7;
+    --text-color: #fff;
+    --main-color:#BFB0A0;
+}
+
+::-webkit-scrollbar{
+    width: 2em;
+    height: 10em;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--main-color);
+    border-radius: 100vw;
+    margin-block: .5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--second-bg-color);
+    border: .35em solid var(--main-color);
+    border-radius: 100vw;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.more{
+    position: relative;
+    text-align: center;
+    padding-top: 8rem;
+}
+
+.more-img{
+    position: relative;
+    text-align: center;
+}
+
+.back{
+    position: absolute;
+    left: 0%;
+    top: 3%;
+    font-family: "Delicious Handrawn", crusive;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 200;
+}
+
+.back:hover{
+    color: var(--main-color);
+}
+
+.next{
+    position: absolute;
+    right: 0%;
+    top: 3%;
+    font-family: "Delicious Handrawn", crusive;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 200; 
+}
+
+.next:hover{
+    color: var(--main-color);
+}
+
+.more-img img{
+    width: 30vw;
+    height: auto;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(-2.4rem);
+    }
+    66%{
+        transform: translateX(2.4rem);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.more-img h3{
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+
+.more-img h2{
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: var(--main-color);
+}
+
+span{
+    color: var(--main-color);
+}
+
+.more-img h3 span{
+    font-family: 'Poppins', cursive;
+}
+
+.more-text p{
+    font-size: 1.6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1.5rem;
+}
+
